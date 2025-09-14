@@ -4,20 +4,20 @@ Password Manager (CLI, Python)
 A small, learning-oriented command-line password manager.
 It uses SQLite for storage, PBKDF2 for login password hashing, and AES (via PyCryptodome) to encrypt service passwords.
 
-Requirements
+Requirements:
 
-Python 3.12+
+- Python 3.12+
 
-PyCryptodome (pip install pycryptodome)
+- PyCryptodome (pip install pycryptodome)
 
-What it does
+What it does:
 
-Register/login users; update/delete accounts (SQLite).
+- Register/login users; update/delete accounts (SQLite).
 
-Store/list/update/delete service credentials per user.
+- Store/list/update/delete service credentials per user.
 
-Hash login passwords with PBKDF2-HMAC-SHA512 + salt.
+- Hash login passwords with PBKDF2-HMAC-SHA512 + salt.
 
-Encrypt stored service passwords with AES (CBC + PKCS7) and a random IV.
+- Encrypt stored service passwords with AES (CBC + PKCS7) and a random IV.
 
-Generate secure random passwords with secrets
+- Generate secure random passwords with secrets
